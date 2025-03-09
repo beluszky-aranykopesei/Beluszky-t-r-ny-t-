@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=https://beluszky-aranykopesei.vercel.app/">
+    <link rel="icon" href="Link.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Link.png" type="image/x-icon">
+    <title>Beluszky Aranyköpései</title>
+    <style>
+        html {
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        p {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 5px;
+        }
+
+        .szöveg {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            .video-container {
+                width: 100%;
+            }
+        }
+
+        .szöveg.nagyobb{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body onload="enlargeText()">
+    <p class="szöveg">Ha nem irányít át azonnal, kattints <a href="https://beluszky-aranykopesei.vercel.app/"> ide</a>!</p>
+</body>
+<script>
+    function enlargeText() {
+            const text = document.querySelector('.szöveg');
+            setTimeout(() => {
+                text.classList.add('nagyobb');
+            }, 5000);
+        }
+</script>
+</html>
